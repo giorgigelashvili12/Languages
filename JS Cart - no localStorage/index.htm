@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="products">
+        <div class="card">
+            <img class="product-image" src="https://www.buildrestfoods.com/wp-content/uploads/2020/08/green-apply.jpg" alt="">
+            <h2 class="product-name">Green Organic Apple</h2>
+            <p class="product-description">Description Description Description Description Description</p>
+            <span>$</span><span class="product-price">0.01</span>
+            <br>
+            <button onclick="addToCart('Green Organic Apple', 0.01)">Add To Cart</button>
+        </div>
+    
+        <div class="card">
+            <img class="product-image" src="" alt="">
+            <h2 class="product-name">Red Organic Apple</h2>
+            <p class="product-description">Description Description Description Description Description</p>
+            <span>$</span><span class="product-price">5.01</span>
+            <br>
+            <button onclick="addToCart('Red Organic Apple', 5.01)">Add To Cart</button>
+        </div>
+    </div>
+
+    <div class="cart">
+        <div class="product-card" id="cartItems"></div>
+        <br>
+        <div class="total">Total Price: $<span id="totalPrice">0</span></div>
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
