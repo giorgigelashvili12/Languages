@@ -1,0 +1,36 @@
+.footer {
+    background-color: white;
+    padding: 60px 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer .mid {
+    display: flex;
+    justify-content: space-between;
+}
+.footer .mid .left, .footer .mid .right form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.footer .mid .right form input {
+    outline: 0;
+    border: 1px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.footer .bottom a {
+    color: black;
+}
+@media screen and (max-width: 600px) {
+    .footer {
+        padding: 20px;
+    }
+    .footer .mid {
+        flex-direction: column;
+    }
+    .footer .mid .right form {
+        margin-top: 30px;
+    }
+}

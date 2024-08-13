@@ -1,0 +1,156 @@
+body {
+    background-color: white;
+}
+main .hero {
+    margin-top: 90px;
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+main .hero h1 {
+    font-weight: 400;
+    font-size: 4rem;
+}
+main .hero p {
+    font-size: 1.5rem;
+    margin: 30px;
+    text-align: center;
+}
+
+
+main .mission .content .sidebar {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    flex-direction: row;
+}
+main .mission .content .sidebar .line {
+    height: 500px;
+    width: 1px;
+    background-color: black;
+}
+main .mission .content .sidebar .barline {
+    height: 60px;
+    width: 3px;
+    background-color: black;
+}
+main .mission .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    width: 500px;
+}
+main .mission .content .text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+main .block {
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+main .mission {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 60px 300px;
+}
+main .mission img {
+    border-radius: 20px;
+    width: 30%;
+}
+main .mission .content .text h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+main .mission .content .text p {
+    font-size: 1.2rem;
+}
+
+
+main .journey {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 380px;
+}
+main .journey .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+main .journey .row .card {
+    width: 400px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .5s;
+}
+main .journey .row .card h2 {
+    font-size: 2.5rem;
+    color: orangered;
+    font-weight: 500;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+main .journey .row .card:hover {
+    border-radius: 5px;
+    transition: .5s;
+    transform: translateY(-20px);
+}
+
+@media screen and (max-width: 600px) {
+    main .hero {
+        padding: 10px;
+    }
+    main .hero h1 {
+        font-size: 3rem;
+    }
+    main .mission .content .sidebar {
+        margin: 10px;
+    }
+    main .mission .content {
+        gap: 1rem;
+        width: 450px;
+    }
+    main .mission .content .text {
+        gap: 1rem;
+    }
+    main .block {
+        width: 600px;
+    }
+    main .mission {
+        width: 100%;
+        padding: 60px 60px;
+    }
+    main .mission img {
+        display: none;
+    }
+    main .journey {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 30px;
+    }
+    main .journey .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

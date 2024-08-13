@@ -1,0 +1,185 @@
+.page main .block:nth-child(1) {
+    background-color: black;
+    color: white;
+}
+.page main .block {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 9rem;
+    padding: 6rem;
+}
+.page main .block img {
+    width: 80%;
+}
+.page main .block .sidebar {
+    display: flex;
+    align-items: center;
+}
+.page main .block .sidebar .line {
+    height: 400px;
+    width: 1.5px;
+    background-color: gray;
+}
+.page main .block .sidebar .border {
+    width: 3px;
+    height: 100px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.page main .content {
+    display: flex;
+    justify-content: space-between;
+    gap: 8rem;
+    align-items: center;
+}
+.page main h2 {
+    font-size: 3rem;
+    font-weight: 500;
+}
+.page main p {
+    font-size: 1.2rem;
+}
+.page main .more-btn {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+.page main .more-btn:hover {
+    background-color: black;
+    color: white;
+    transition: .5s;
+}
+.page main .img-blank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page main .img-blank img {
+    width: 60%;
+}
+.page main .why-us {
+    width: 100%;
+    height: 1000px;
+    padding: 10px 20px;
+    background: url('https://d2n4wb9orp1vta.cloudfront.net/cms/brand/ABG/2020-ABG/fcatrenton2.jpg;maxWidth=1200') no-repeat center center fixed;
+    background-size: cover;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page main .why-us .content .abt-us {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    gap: 4rem;
+    padding: 30px;
+    width: 500px;
+}
+.page main .why-us .content .abt-us a {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+.page main .why-us .content .abt-us a:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+}
+.page main .status .content .tab .bar {
+    display: flex;
+    flex-direction: column;
+}
+.page main .status .content .tab .bar .line {
+    width: 200px;
+    height: 1px;
+    background-color: black;
+}
+.page main .status .content .tab .bar .border {
+    width: 30px;
+    height: 2px;
+    background-color: black;
+}
+.page main .status .content .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+}
+.page main .status .content {
+    display: flex;
+    flex-direction: column;
+}
+.page main .careers {
+    background-color: black;
+    width: 900px;
+}
+.page main .careers h3 {
+    color: white;
+}
+.page main .careers h2 {
+    color: white;
+}
+.page main .careers .more-btn {
+    color: white;
+    border: 1px solid white;
+    transition: .5s;
+}
+.page main .careers .more-btn:hover {
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+@media screen and (max-width: 600px) {
+    .block {
+        flex-direction: column;
+    }
+    main .text h2 {
+        font-size: 2rem;
+    }
+    .abt-us .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .page main .block img {
+        width: 150%;
+    }
+    .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .page main .status .content .tab .bar .border {
+        width: 20px;
+        height: 2px;
+    }
+    .page main .status .content .tab .bar .line {
+        width: 150px;
+        height: 1px;
+        background-color: black;
+    }
+    .page main .block:nth-child(1) .content {
+        gap: 2rem;
+    }
+    .page main .careers {
+        background-color: black;
+        width: 500px;
+        padding: 20px;
+    }
+    .page main .careers .content {
+        gap: 2rem;
+    }
+    .page main .careers .content .text h2 {
+        font-size: 2rem;
+    }
+}

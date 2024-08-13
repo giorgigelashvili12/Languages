@@ -1,0 +1,170 @@
+main .hero {
+    background-color: white;
+    padding: 150px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .hero h1 {
+    font-weight: 400;
+    font-size: 3.5rem;
+}
+main .block {
+    background-color: black;
+}
+main .block .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .block .top .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    padding: 100px;
+    width: 700px;
+}
+main .block .sidebar .line {
+    height: 500px;
+    width: 1px;
+    background-color: gray;
+}
+main .block .sidebar {
+    display: flex;
+    align-items: center;
+}
+main .block .sidebar .bar {
+    height: 400px;
+    width: 3px;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main .block .top .content .text h4,
+main .block .top .content .text h2 {
+    color: white;
+}
+main .block .top .content .text h2 {
+    font-size: 2rem;
+    font-weight: 400;
+}
+main .block .top .content .text h4 {
+    font-weight: 400;
+}
+main .block .bottom {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    height: 140px;
+    margin-top: 70px;
+}
+main .block .bottom h3 {
+    color: white;
+    font-weight: 500;
+}
+
+main .bottomw {
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+main .bottomw .top .sidebar {
+    display: flex;
+    align-items: center;
+}
+main .bottomw .top .sidebar .line {
+    height: 500px;
+    width: 1px;
+    background-color: gray;
+}
+main .bottomw .sidebar .bar {
+    height: 400px;
+    width: 3px;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+main .bottomw .top {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+}
+main .bottomw .top .content {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: center;
+    width: 500px;
+}
+main .bottomw .top .content .text h4 {
+    font-weight: 500;
+}
+main .bottomw .top .content .text h2 {
+    font-weight: 500;
+    font-size: 2rem;
+}
+main .bottomw .bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 400px;
+}
+main .bottomw .bottom h3 {
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    main .hero {
+        padding: 45px 55px;
+    }
+    main .hero h1 {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    main .hero img {
+        width: 100%;
+    }
+    main .block .top {
+        display: flex;
+        flex-direction: column;
+    }
+    main .block .top .content {
+        gap: 1.5rem;
+        padding: 85px;
+        width: 400px;
+    }
+    main .block .top .content .text h2 {
+        font-size: 1.7rem;
+    }
+    main .block .top img {
+        width: 100%;
+    }
+    main .block .bottom {
+        gap: 0.2rem;
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 25px;
+    }
+    main .bottomw .top .content .text h2 {
+        font-size: 1.5rem;
+    }
+    main .bottomw .top {
+        padding: 25px;
+        padding: 0px;
+    }
+    main .bottomw .top .content {
+        padding: 25px;
+        width: 400px;
+    }
+    main .bottomw .top {
+        display: flex;
+        flex-direction: column;
+    }
+    main .bottomw .top img {
+        margin: 15px;
+    }
+}
