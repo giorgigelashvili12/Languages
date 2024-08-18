@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+Georgian:wght@100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Noto Sans Georgian", sans-serif;
+}
+
+.header {
+    overflow: hidden;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 0 20px #525252;
+    display: flex;
+    align-items: center;
+    padding: 15px 80px;
+    justify-content: space-between;
+}
+.header ul.main li img {
+    width: 5%;
+}
+.header ul.navbar li a {
+    text-decoration: none;
+    color: #000;
+    border-bottom: 0px solid #000;
+}
+.header ul.navbar li a:hover {
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000;
+}
+.header ul.main a {
+    border: none;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.7rem;
+    font-weight: bold;
+}
